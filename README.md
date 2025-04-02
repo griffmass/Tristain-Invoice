@@ -1,0 +1,1 @@
+<h1> This GitHub repository provides a simple way to convert an HTML frontend into a PDF using a print button. When clicked, it automatically downloads the file. You can further customize and enhance the implementation as needed. </h1>
