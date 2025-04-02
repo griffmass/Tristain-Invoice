@@ -197,7 +197,7 @@ header("Access-Control-Allow-Origin: *");
 						<table>
 							<tr>
 								<td class="title">
-									<img src="<?php echo $app_url?>/zero-louise.jpg" style="width: 100%; max-width: 300px" />
+									<img src="<?php echo $app_url?>/zero.jpg" style="width: 100%; max-width: 300px" />
 								</td>
 
 								<td>
