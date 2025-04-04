@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero Louise Invoice</title>
+
+  <meta name="description" content="Invoice for Zero Louise" />
+  <meta name="author" content="Griffmass" />
+  <meta name="authorUrl" content="https://github.com/griffmass" />
+
+  <!-- External Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+  <!-- Print Button -->
+  <div class="text-center py-3">
+    <input type="button" id="rep" value="Print" class="btn btn-info btn_print" />
+  </div>
+
+  <!-- Invoice Content -->
+  <div class="container_content" id="container_content">
+    <div class="invoice-box">
+      <table cellpadding="0" cellspacing="0">
+        <!-- Header Section -->
+        <tr class="top">
+          <td colspan="2">
+            <table>
+              <tr>
+                <td class="title">
+                  <img src="img/zero.jpg" alt="Zero Louise Logo" style="width: 100%; max-width: 300px;" />
+                </td>
+                <td>
+                  Invoice #: 001<br />
+                  Created: April 2, 2025<br />
+                  Due: May 2, 2025
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Information Section -->
+        <tr class="information">
+          <td colspan="2">
+            <table>
+              <tr>
+                <td>
+                  Tristain Magic Academy<br />
+                  Magical District<br />
+                  Tristain Kingdom
+                </td>
+                <td>
+                  Louise de La Vallière<br />
+                  Familiar: Saito Hiraga<br />
+                  louise@tristain.com
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Payment Method -->
+        <tr class="heading">
+          <td>Method of Payment</td>
+          <td>Scroll Reference</td>
+        </tr>
+        <tr class="details">
+          <td>Parchment Check</td>
+          <td>Ancient Seal #1000</td>
+        </tr>
+
+        <!-- Services and Fees -->
+        <tr class="heading">
+          <td>Magic Service</td>
+          <td>Fee</td>
+        </tr>
+        <tr class="item">
+          <td>Summoning a Familiar</td>
+          <td>10,000 Gold</td>
+        </tr>
+        <tr class="item">
+          <td>Explosion Spell Training</td>
+          <td>5,000 Gold</td>
+        </tr>
+        <tr class="item last">
+          <td>Royal Ball Attendance</td>
+          <td>3,000 Gold</td>
+        </tr>
+
+        <!-- Total -->
+        <tr class="total">
+          <td></td>
+          <td>Total: 18,000 Gold</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
