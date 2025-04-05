@@ -2,16 +2,18 @@
 
 Convert an HTML invoice into a downloadable PDF with one click.
 
-![Frontend Preview](https://github.com/griffmass/Tristain-Invoice/blob/main/public/img/frontend.png?raw=true)
+![Frontend Preview](https://github.com/griffmass/Tristain-Invoice/blob/main/public/img/gif.gif?raw=true)
 
 ## Quick Start
 
 ```bash
 git clone https://github.com/griffmass/Tristain-Invoice
 cd Tristain-Invoice/src
-php -S localhost:8000
+npm init -y
+npm install express
+npm start
 ````
-Open in browser: ``localhost:8000``
+Open in browser: ``http://localhost:8000``
 
 ## Features
 
