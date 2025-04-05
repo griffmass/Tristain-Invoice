@@ -2,7 +2,9 @@
 
 Convert an HTML invoice into a downloadable PDF with one click.
 
-![Frontend Preview](https://github.com/griffmass/Tristain-Invoice/blob/main/public/img/gif.gif?raw=true)
+## Live Preview
+You can view the live version of the project here:  
+https://spotty-cloud-spur.glitch.me/griffmass/
 
 ## Quick Start
 
