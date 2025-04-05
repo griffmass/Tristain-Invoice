@@ -10,19 +10,21 @@ https://spotty-cloud-spur.glitch.me/griffmass/
 
 ```bash
 git clone https://github.com/griffmass/Tristain-Invoice
-cd Tristain-Invoice/src
+cd Tristain-Invoice/public
 npm init -y
 npm install express
 npm start
 ````
 Open in browser: ``http://localhost:8000``
 
+__Read:__ https://tailwindcss.com/docs/installation/tailwind-cli
+
 ## Features
 
 - One-click PDF generation
 - Clean, responsive design
 
-## Tech Stack
+## Technologies
 <!-- HTML -->    
 <a href="https://www.w3.org/html" target="_blank" rel="noreferrer"> 
 <img src="https://cdn1.iconfinder.com/data/icons/programing-development-7/24/html_html5_web_programing_developer-512.png" alt="html5" width="28" height="28"/> </a> 
@@ -32,6 +34,9 @@ Open in browser: ``http://localhost:8000``
 <!-- Tailwind --> 
 <a href="https://tailwindcss.com" target="_blank" rel="noreferrer"> 
 <img src="https://static-00.iconduck.com/assets.00/tailwind-css-icon-2048x1229-u8dzt4uh.png" alt="php" width="46" height="26"/> </a> 
-<!-- Node JS with Express JS --> 
+<!-- Node JS --> 
+<a href="https://nodejs.org/en" target="_blank" rel="noreferrer"> 
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" alt="react" width="28" height="28"/> </a>
+<!-- Express JS --> 
 <a href="https://expressjs.com" target="_blank" rel="noreferrer"> 
-<img src="https://cdn-images-1.medium.com/max/871/1*d2zLEjERsrs1Rzk_95QU9A.png" alt="react" width="70" height="30"/> </a>
+<img src="https://www.peanutsquare.com/wp-content/uploads/2024/04/Express.png" alt="react" width="28" height="28"/> </a>
