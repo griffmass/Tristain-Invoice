@@ -1,110 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zero Louise Invoice</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero Louise Invoice</title>
+    <meta name="description" content="Invoice for Zero Louise" />
+    <meta name="author" content="Griffmass" />
+    <meta name="authorUrl" content="https://github.com/griffmass" />
 
-  <meta name="description" content="Invoice for Zero Louise" />
-  <meta name="author" content="Griffmass" />
-  <meta name="authorUrl" content="https://github.com/griffmass" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Print Button -->
+    <div class="text-center py-4">
+      <button
+        id="rep"
+        class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition"
+      >
+        Print
+      </button>
+    </div>
 
-  <!-- External Libraries -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="style.css" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
-</head>
-<body>
-
-  <!-- Print Button -->
-  <div class="text-center py-3">
-    <input type="button" id="rep" value="Print" class="btn btn-info btn_print" />
-  </div>
-
-  <!-- Invoice Content -->
-  <div class="container_content" id="container_content">
-    <div class="invoice-box">
-      <table cellpadding="0" cellspacing="0">
+    <!-- Invoice Content -->
+    <div id="container_content" class="max-w-3xl mx-auto bg-white p-8 shadow-lg rounded-md">
+      <div class="space-y-8">
         <!-- Header Section -->
-        <tr class="top">
-          <td colspan="2">
-            <table>
-              <tr>
-                <td class="title">
-                  <img src="img/zero.jpg" alt="Zero Louise Logo" style="width: 100%; max-width: 300px;" />
-                </td>
-                <td>
-                  Invoice #: 001<br />
-                  Created: April 2, 2025<br />
-                  Due: May 2, 2025
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+        <div class="flex justify-between items-start flex-col sm:flex-row">
+          <div class="w-full sm:w-1/2">
+            <img src="img/zero.jpg" alt="Zero Louise Logo" class="w-full max-w-xs rounded-lg shadow-lg" />
+          </div>
+          <div class="text-right w-full sm:w-1/2 mt-4 sm:mt-0">
+            <p>Invoice #: <strong>001</strong></p>
+            <p>Created: April 2, 2025</p>
+            <p>Due: May 2, 2025</p>
+          </div>
+        </div>
 
-        <!-- Information Section -->
-        <tr class="information">
-          <td colspan="2">
-            <table>
-              <tr>
-                <td>
-                  Tristain Magic Academy<br />
-                  Magical District<br />
-                  Tristain Kingdom
-                </td>
-                <td>
-                  Louise de La Vallière<br />
-                  Familiar: Saito Hiraga<br />
-                  louise@tristain.com
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+        <!-- Info Section -->
+        <div class="flex justify-between flex-col sm:flex-row">
+          <div>
+            <p>Tristain Magic Academy</p>
+            <p>Magical District</p>
+            <p>Tristain Kingdom</p>
+          </div>
+          <div class="text-right">
+            <p>Louise de La Vallière</p>
+            <p>Familiar: Saito Hiraga</p>
+            <p>louise@tristain.com</p>
+          </div>
+        </div>
 
         <!-- Payment Method -->
-        <tr class="heading">
-          <td>Method of Payment</td>
-          <td>Scroll Reference</td>
-        </tr>
-        <tr class="details">
-          <td>Parchment Check</td>
-          <td>Ancient Seal #1000</td>
-        </tr>
+        <div>
+          <div class="bg-gray-200 font-bold px-4 py-2 flex justify-between">
+            <span>Method of Payment</span>
+            <span>Scroll Reference</span>
+          </div>
+          <div class="px-4 py-2 flex justify-between border-b">
+            <span>Parchment Check</span>
+            <span>Ancient Seal #1000</span>
+          </div>
+        </div>
 
         <!-- Services and Fees -->
-        <tr class="heading">
-          <td>Magic Service</td>
-          <td>Fee</td>
-        </tr>
-        <tr class="item">
-          <td>Summoning a Familiar</td>
-          <td>10,000 Gold</td>
-        </tr>
-        <tr class="item">
-          <td>Explosion Spell Training</td>
-          <td>5,000 Gold</td>
-        </tr>
-        <tr class="item last">
-          <td>Royal Ball Attendance</td>
-          <td>3,000 Gold</td>
-        </tr>
+        <div>
+          <div class="bg-gray-200 font-bold px-4 py-2 flex justify-between">
+            <span>Magic Service</span>
+            <span>Fee</span>
+          </div>
+          <div class="px-4 py-2 flex justify-between border-b">
+            <span>Summoning a Familiar</span>
+            <span>10,000 Gold</span>
+          </div>
+          <div class="px-4 py-2 flex justify-between border-b">
+            <span>Explosion Spell Training</span>
+            <span>5,000 Gold</span>
+          </div>
+          <div class="px-4 py-2 flex justify-between">
+            <span>Royal Ball Attendance</span>
+            <span>3,000 Gold</span>
+          </div>
+        </div>
 
         <!-- Total -->
-        <tr class="total">
-          <td></td>
-          <td>Total: 18,000 Gold</td>
-        </tr>
-      </table>
+        <div class="flex justify-end border-t pt-4">
+          <p class="font-bold text-lg">Total: 18,000 Gold</p>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <!-- Custom Script -->
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>  
+  </body>
 </html>
