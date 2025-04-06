@@ -15,16 +15,13 @@ npm init -y
 npm install express
 npm start
 ````
-__Open in browser:__ ``http://localhost:8000``
+> __Open in browser:__ ``http://localhost:8000``
+>> __Read:__ https://tailwindcss.com/docs/installation/tailwind-cli
+>>> Features
+>> - [x] One-click PDF generation
+>> - [x] Clean, responsive design
 
-__Read:__ https://tailwindcss.com/docs/installation/tailwind-cli
-
-## Features
-
-- *One-click PDF generation*
-- *Clean, responsive design*
-
-## Technologies
+### Technologies
 <!-- HTML -->    
 <a href="https://www.w3.org/html" target="_blank" rel="noreferrer"> 
 <img src="https://cdn1.iconfinder.com/data/icons/programing-development-7/24/html_html5_web_programing_developer-512.png" alt="html5" width="28" height="28"/> </a> 
